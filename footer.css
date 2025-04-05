@@ -1,0 +1,120 @@
+/*
+	Eesh Auto Customs home page
+	Filename: footer.css
+	Author: Eeshwar Bissessar
+	Date: 04/04/2025
+*/
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+/* General Footer Styling */
+.footer {
+    background-color: #004a93; /* Dark background */
+    color: white; /* Text color */
+    padding: 20px 15px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Socials on the left, info on the right */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Information */
+.footer-info {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: center; /* Center text in smaller screens */
+}
+
+.footer-info h4 {
+    padding-top: 1em;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-info p {
+    margin: 5px 0; /* Spacing between lines */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+/* Social Media Links */
+.footer-social-links {
+    flex: 1;
+    min-width: 250px;
+    text-align: center; /* Center text in smaller screens */
+}
+
+.footer-social-links h4 {
+    padding-top: 2em;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 30px; /* Size of the icons */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+.footer-social-links a:hover {
+    color: #020e1a; /* Highlight color when hovered */
+}
+
+/*  Copyright */
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack content on smaller screens */
+        align-items: center; /* Center align for smaller screens */
+        text-align: center; /* Center text for footer info */
+    }
+
+    .footer-info, .footer-social-links {
+        min-width: 100%; /* Stretch to full width */
+        margin-bottom: 20px;
+
+    }
+    .social-icons{
+        justify-content: center; /* Ensure social icons are centered */
+    }
+}

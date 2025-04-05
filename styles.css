@@ -1,0 +1,289 @@
+/*
+	Eesh Auto Customs home page
+	Filename: styles.css
+	Author: Britney Alexander
+	Date: 15/11/2024
+*/
+
+body {
+	width: auto;
+	height: auto;
+	font-family: "Times New Roman", "Arial";
+	background-color: #000000;
+	color: white;
+}
+
+/*Main heading*/
+.main-heading {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2em;
+}
+
+/*Banner*/
+.banner {
+    width: 100%;
+    overflow: hidden; /* Ensures no extra spacing */
+    position: relative;
+}
+
+.banner-img {
+    width: 100%; /* Makes the banner fill the page width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any extra spacing below the image */
+}
+
+
+/*Sub heading*/
+.subheading {
+    font-size: 26px;
+    font-family: "Times New Roman", Times, serif;
+    padding: 4em;
+    text-align: center;
+}
+
+.subheading p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 2em; /* Optional for better readability */
+    padding: 1em;
+}
+
+
+/*Category Gallery*/
+.category-gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the gallery items horizontally */
+}
+
+.category-gallery-item {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em;
+    text-align: center;
+    
+}
+
+.desc {
+    font-size: 24px;
+    padding: 1em;
+    
+}
+
+.sbutton {
+    padding: 10px 20px; /* Adds spacing inside the button */
+    background-color: #10c0f9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 5px #10c0f9, 0 0 25px #10c0f9;
+    border: none; /* Removes border */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 14px; /* Adjusts font size */
+    margin-top: 2em;
+
+}
+
+.sbutton:hover {
+    box-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 
+    0 0 100px #ffffff, 0 0 200px #ffffff;
+
+}
+
+/* Optional: Focused State */
+.custom-button:focus {
+    outline: none; /* Removes default focus outline */
+
+}
+
+/* Featured Product Gallery*/
+.desc p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 2em;
+    padding-top: 1em;
+}
+
+.desc .price {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+/* General Styling for Stars */
+.rating {
+    font-size: 24px; /* Adjust size of stars */
+    color: gray; /* Default star color */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers stars horizontally */
+    align-items: center; /* Centers stars vertically if needed */
+    gap: 5px; /* Space between stars */
+    height:30px; /* Optional: Adjust height of the container */
+    border: 2px solid #ffffff;
+}
+
+/* Stars with Warning */
+.star.warning {
+    color: yellow;
+}
+
+
+.text-review {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+
+
+/*Services Gallery*/
+.services-gallery-row {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping on smaller screens */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+    background-color: #000000;
+}
+
+/* Individual Items */
+.services-gallery-row-item {
+    border: 2px solid #ccc; /* Adds a light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: calc(33.33% - 40px); /* 3 items per row with spacing */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    text-align: center; /* Centers text and icons */
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.services-gallery-row-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+}
+
+/* Icon Styling */
+.icon-warp .icon {
+    font-size: 40px;
+    color: #007bff; /* Blue color for icons */
+    margin-bottom: 10px;
+}
+
+/* Title Styling */
+.type {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-gallery-row-item {
+        width: calc(50% - 20px); /* 2 items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-gallery-row-item {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/*Contact Us Form*/
+/* Page Container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it spans the full height of the viewport */
+ 
+}
+
+/* Form Container */
+.form-container {
+    flex: 1; /* Allow the form to take up available space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding to avoid edge clipping */
+    box-sizing: border-box;
+    padding-top: 7em;
+}
+
+/* General Form Styling */
+form {
+    width: 100%;
+    max-width: 500px; /* Limit form width */
+    padding: 20px;
+    border: 1px solid #ccc; /* Border for form */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Labels */
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+/* Inputs and Textareas */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+form textarea::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Buttons Container */
+.button-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 10px;
+}
+
+/* Submit Button */
+form .submit {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form .clear {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.horizontal-line {
+	width: 100%; /* Set the width to span across the entire page */
+    height: 5px; /* Adjust the thickness of the line */
+    border-bottom: 4px dashed #ffffff;
+
+}
